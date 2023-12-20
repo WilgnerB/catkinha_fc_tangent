@@ -1,0 +1,10 @@
+<launch>
+  <param name="~kp" type="double" value="11.0" />
+  <param name="~kp1" type="double" value="2.00" />
+  <param name="~kp2" type="double" value="2.00" />
+  <param name="~x_goal" type="double" value="8.00" />
+  <param name="~y_goal" type="double" value="8.00" />
+  <param name="~d" type="double" value="10.0" />
+  <node pkg="stage_ros" type="stageros" name="stageros" args="$(find catkinha_fc_tangent)/ecai21_1.world" />
+  <node pkg="catkinha_fc_tangent" type="catkinha_fc_tangent_node" name="catkinha_fc_tangent_node" output="screen"/>
+</launch>
